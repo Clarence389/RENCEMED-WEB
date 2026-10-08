@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stroke | RenceMed RM+</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container">
+<span class="section-kicker">RM+ Disease Clinical Reference</span>
+<h1>Stroke</h1>
+<p>Neurology / Emergency</p>
+</div>
+</header>
+<main class="container">
+<nav class="article-nav"><a href="#overview">Overview</a><a href="#clinical-table">Clinical Table</a><a href="#patient">Patient Focus</a><a href="#emergency">Red Flags</a><a href="#references">References</a></nav>
+
+<section id="overview" class="clinical-card">
+<span class="section-kicker">Clinical framework</span>
+<h2>What clinicians assess</h2>
+<p>This page organizes the major clinical decision points for <strong>Stroke</strong>. It is designed for patient education and professional revision, not as a substitute for a current guideline, local protocol or individualized clinical assessment.</p>
+</section>
+
+<section id="clinical-table" class="clinical-upgrade">
+<h2>Disease-Specific Clinical Table</h2>
+<div class="clinical-table-wrap">
+<table class="clinical-table">
+<thead><tr><th>Clinical domain</th><th>Reference notes</th></tr></thead>
+<tbody>
+<tr><td><strong>Diagnosis / assessment</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-dx-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-dx-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-dx-table th {
+    background-color: #0f766e; /* Teal theme for Stroke Assessment */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-dx-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-dx-param {
+    font-weight: bold;
+    color: #0f766e;
+    font-size: 1.05em;
+  }
+  .stroke-dx-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-dx-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-dx-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-dx-row-even { background-color: #ffffff; }
+  .stroke-dx-row-odd { background-color: #f0fdf4; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-dx-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-dx-table { font-size: 15px; }
+    .stroke-dx-table th, .stroke-dx-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-dx-table { font-size: 14px; }
+    .stroke-dx-table th, .stroke-dx-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-dx-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-dx-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-dx-table th, .stroke-dx-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-dx-table, 
+    .stroke-dx-table thead, 
+    .stroke-dx-table tbody, 
+    .stroke-dx-table th, 
+    .stroke-dx-table tr, 
+    .stroke-dx-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-dx-table thead { display: none; }
+    .stroke-dx-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #0f766e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-dx-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-dx-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-dx-table tr td:nth-of-type(1)::before { content: "Clinical Assessment Step:"; }
+    .stroke-dx-table tr td:nth-of-type(2)::before { content: "Diagnostic Criteria & Methodologies:"; }
+    .stroke-dx-table tr td:nth-of-type(3)::before { content: "Clinical Purpose & Target Findings:"; }
+  }
+</style>
+
+<div class="stroke-dx-container">
+  <table class="stroke-dx-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Clinical Assessment Step</th>
+        <th style="width: 39%;">Diagnostic Criteria &amp; Methodologies</th>
+        <th style="width: 39%;">Clinical Purpose &amp; Target Findings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Emergency Screen & Triage -->
+      <tr class="stroke-dx-row-even">
+        <td class="stroke-dx-param">Rapid Clinical Triage &amp; Onset Determination</td>
+        <td>
+          <ul>
+            <li><strong>BE-FAST / FAST Tool:</strong> Balance, Eyes (vision loss), Face drooping, Arm weakness, Speech difficulty, Time to call emergency services.</li>
+            <li><strong>LKW (Last Known Well):</strong> Establish exact time patient was last seen baseline normal to calculate reperfusion eligibility windows.</li>
+            <li><strong>Emergency Fingerstick Glucose:</strong> Immediate blood glucose test prior to any intervention.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Rapidly identify hyperacute neurological deficits.</li>
+            <li>Rule out hypoglycemia as a stroke mimic (glucose &lt; 3.0 mmol/L or &lt; 55 mg/dL).</li>
+            <li>Determine candidate eligibility for intravenous thrombolysis (IVT) and mechanical thrombectomy (MT).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Neurological Severity Scoring -->
+      <tr class="stroke-dx-row-odd">
+        <td class="stroke-dx-param">Neurological Severity &amp; Deficit Scoring</td>
+        <td>
+          <ul>
+            <li><strong>NIHSS (NIH Stroke Scale):</strong> 11-item baseline quantitative scale (score 0–42).
+              <ul>
+                <li><em>Minor:</em> 1–4</li>
+                <li><em>Moderate:</em> 5–15</li>
+                <li><em>Moderate-Severe:</em> 16–20</li>
+                <li><em>Severe:</em> &gt; 20</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Quantify initial deficit severity and establish baseline for treatment monitoring.</li>
+            <li>Guide decision-making for reperfusion therapy (e.g., NIHSS &ge; 6 suggests large vessel occlusion).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Brain & Vascular Imaging -->
+      <tr class="stroke-dx-row-even">
+        <td class="stroke-dx-param">Emergency Neuroimaging &amp; Angiography</td>
+        <td>
+          <ul>
+            <li><strong>Non-Contrast CT (NCCT) Brain:</strong> Urgent immediate imaging upon hospital arrival.</li>
+            <li><strong>CTA (CT Angiography) / MRA:</strong> Aortic arch to vertex vascular imaging.</li>
+            <li><strong>CT / MR Perfusion (CTP / MRP):</strong> Automated salvageable tissue mapping (ASPECTS score / ischemic core vs. penumbra).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Differentiate ischemic stroke from acute intracranial hemorrhage (ICH).</li>
+            <li>Identify Large Vessel Occlusion (LVO) in ICA, MCA, or Basilar artery.</li>
+            <li>Extend thrombectomy window up to 24 hours in selected LVO cases (DAWN / DEFUSE-3 criteria).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Etiologic & Laboratory Workup -->
+      <tr class="stroke-dx-row-odd">
+        <td class="stroke-dx-param">Etiologic Workup &amp; Baseline Diagnostics</td>
+        <td>
+          <ul>
+            <li><strong>Cardiovascular Workup:</strong> 12-lead ECG, telemetry monitoring (&gt; 24h), and Transthoracic / Transesophageal Echocardiography (TTE/TEE).</li>
+            <li><strong>Baseline Labs:</strong> FBC, Coagulation panel (INR, aPTT), Renal function, Electrolytes, Troponin, Lipid panel, HbA1c.</li>
+            <li><strong>TOAST Classification:</strong> Categorize cause into Large-artery atherosclerosis, Cardioembolism, Small-vessel occlusion (lacunar), Other, or Undetermined.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Detect occult Atrial Fibrillation or structural cardiac sources of emboli.</li>
+            <li>Identify underlying atherosclerotic disease, carotid stenosis, or microvascular pathology to guide secondary prevention.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Key monitoring</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-mon-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-mon-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-mon-table th {
+    background-color: #0f766e; /* Teal theme matching Stroke module */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-mon-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-mon-param {
+    font-weight: bold;
+    color: #0f766e;
+    font-size: 1.05em;
+  }
+  .stroke-mon-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-mon-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-mon-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-mon-row-even { background-color: #ffffff; }
+  .stroke-mon-row-odd { background-color: #f0fdf4; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-mon-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-mon-table { font-size: 15px; }
+    .stroke-mon-table th, .stroke-mon-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-mon-table { font-size: 14px; }
+    .stroke-mon-table th, .stroke-mon-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-mon-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-mon-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-mon-table th, .stroke-mon-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-mon-table, 
+    .stroke-mon-table thead, 
+    .stroke-mon-table tbody, 
+    .stroke-mon-table th, 
+    .stroke-mon-table tr, 
+    .stroke-mon-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-mon-table thead { display: none; }
+    .stroke-mon-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #0f766e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-mon-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-mon-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-mon-table tr td:nth-of-type(1)::before { content: "Monitoring Parameter:"; }
+    .stroke-mon-table tr td:nth-of-type(2)::before { content: "Target Range & Frequency:"; }
+    .stroke-mon-table tr td:nth-of-type(3)::before { content: "Clinical Purpose & Action Thresholds:"; }
+  }
+</style>
+
+<div class="stroke-mon-container">
+  <table class="stroke-mon-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Monitoring Parameter</th>
+        <th style="width: 39%;">Target Range &amp; Frequency</th>
+        <th style="width: 39%;">Clinical Purpose &amp; Action Thresholds</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Neurological Status & NIHSS -->
+      <tr class="stroke-mon-row-even">
+        <td class="stroke-mon-param">Neurological Checks &amp; NIHSS Scoring</td>
+        <td>
+          <ul>
+            <li><strong>Post-Thrombolysis/Thrombectomy:</strong> Every 15 mins for 2 hours, then q30m for 6 hours, then q1h for 16 hours.</li>
+            <li><strong>Routine Ward Care:</strong> Every 2–4 hours during acute phase (&lt; 72 hours).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Detect early neurological deterioration (&ge; 4 point increase in NIHSS).</li>
+            <li>Identify symptomatic intracranial hemorrhage (sICH) or cerebral edema/herniation.</li>
+            <li>Trigger urgent repeat non-contrast CT head if neuro decline occurs.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Blood Pressure Management -->
+      <tr class="stroke-mon-row-odd">
+        <td class="stroke-mon-param">Blood Pressure Control</td>
+        <td>
+          <ul>
+            <li><strong>Post-Thrombolysis (IVT):</strong> Maintain BP &lt; 180/105 mmHg for at least 24 hours.</li>
+            <li><strong>Ischemic (No IVT/MT):</strong> Allow permissive hypertension up to &lt; 220/120 mmHg for first 24–48 hours.</li>
+            <li><strong>Hemorrhagic (ICH):</strong> Rapid lowering to target SBP 130–140 mmHg.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Prevent reperfusion injury, arterial rupture, and hemorrhagic transformation.</li>
+            <li>Maintain penumbral perfusion in non-thrombolyzed acute ischemic stroke.</li>
+            <li>Utilize IV Labetalol, Nicardipine, or Clevidipine for titration.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Glycemic & Temperature Control -->
+      <tr class="stroke-mon-row-even">
+        <td class="stroke-mon-param">Blood Glucose &amp; Body Temperature</td>
+        <td>
+          <ul>
+            <li><strong>Blood Glucose Target:</strong> 7.8–10.0 mmol/L (140–180 mg/dL); check q1–4h.</li>
+            <li><strong>Core Temperature Target:</strong> Normothermia (&lt; 37.5&deg;C / 99.5&deg;F); check q4h.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Avoid hypoglycemia (&lt; 3.9 mmol/L) which causes acute neuro worsening.</li>
+            <li>Prevent severe hyperglycemia which accelerates ischemic tissue infarction.</li>
+            <li>Treat fever promptly with paracetamol/cooling (hyperthermia increases metabolic penumbral injury).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Dysphagia & Airway Screening -->
+      <tr class="stroke-mon-row-odd">
+        <td class="stroke-mon-param">Swallow Screening &amp; Complications</td>
+        <td>
+          <ul>
+            <li><strong>Dysphagia Screen:</strong> Formal validated bedside water swallow test <em>prior</em> to any oral intake, meds, or hydration.</li>
+            <li><strong>Complication Monitoring:</strong> Daily assessment for aspiration pneumonia, deep vein thrombosis (DVT), urinary retention, and pressure injury.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Prevent aspiration pneumonia (major cause of early post-stroke mortality).</li>
+            <li>Place NG tube if unsafe swallow persists past 24–48 hours.</li>
+            <li>Initiate early intermittent pneumatic compression (IPC) devices for DVT prophylaxis.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Management principles</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-mgmt-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-mgmt-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-mgmt-table th {
+    background-color: #0f766e; /* Teal theme matching Stroke module */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-mgmt-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-mgmt-param {
+    font-weight: bold;
+    color: #0f766e;
+    font-size: 1.05em;
+  }
+  .stroke-mgmt-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-mgmt-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-mgmt-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-mgmt-row-even { background-color: #ffffff; }
+  .stroke-mgmt-row-odd { background-color: #f0fdf4; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-mgmt-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-mgmt-table { font-size: 15px; }
+    .stroke-mgmt-table th, .stroke-mgmt-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-mgmt-table { font-size: 14px; }
+    .stroke-mgmt-table th, .stroke-mgmt-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-mgmt-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-mgmt-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-mgmt-table th, .stroke-mgmt-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-mgmt-table, 
+    .stroke-mgmt-table thead, 
+    .stroke-mgmt-table tbody, 
+    .stroke-mgmt-table th, 
+    .stroke-mgmt-table tr, 
+    .stroke-mgmt-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-mgmt-table thead { display: none; }
+    .stroke-mgmt-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #0f766e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-mgmt-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-mgmt-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-mgmt-table tr td:nth-of-type(1)::before { content: "Management Domain:"; }
+    .stroke-mgmt-table tr td:nth-of-type(2)::before { content: "Intervention Protocol & Regimen:"; }
+    .stroke-mgmt-table tr td:nth-of-type(3)::before { content: "Clinical Rationale & Eligibility Criteria:"; }
+  }
+</style>
+
+<div class="stroke-mgmt-container">
+  <table class="stroke-mgmt-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Management Domain</th>
+        <th style="width: 39%;">Intervention Protocol &amp; Regimen</th>
+        <th style="width: 39%;">Clinical Rationale &amp; Eligibility Criteria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Hyperacute Reperfusion Therapies -->
+      <tr class="stroke-mgmt-row-even">
+        <td class="stroke-mgmt-param">Hyperacute Reperfusion Therapy</td>
+        <td>
+          <ul>
+            <li><strong>Intravenous Thrombolysis (IVT):</strong> Alteplase (0.9 mg/kg IV max 90 mg; 10% bolus, remainder over 60 min) OR Tenecteplase (0.25 mg/kg single bolus max 25 mg) within <strong>0–4.5 hours</strong> of onset.</li>
+            <li><strong>Endovascular Thrombectomy (EVT):</strong> Mechanical retrieval within <strong>0–6 hours</strong> (up to 24 hours with penumbral mismatch on CTP/MRP).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Restore cerebral blood flow and salvage ischemic penumbra.</li>
+            <li><strong>Key Contraindications for IVT:</strong> Active internal bleeding, INR &gt; 1.7, platelets &lt; 100k, severe head trauma within 3 months, or BP &gt; 185/110 mmHg.</li>
+            <li>EVT is indicated for anterior circulation Large Vessel Occlusions (LVOs) with pre-stroke mRS 0–1.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Acute Antiplatelet & Anticoagulation -->
+      <tr class="stroke-mgmt-row-odd">
+        <td class="stroke-mgmt-param">Acute Medical &amp; Antithrombotic Care</td>
+        <td>
+          <ul>
+            <li><strong>Non-Thrombolyzed Ischemic:</strong> Aspirin 160–325 mg immediately.</li>
+            <li><strong>Post-Thrombolysis:</strong> Delay antiplatelets for 24 hours until repeat CT excludes hemorrhage.</li>
+            <li><strong>Dual Antiplatelet Therapy (DAPT):</strong> Aspirin + Clopidogrel (75 mg daily) for 21–90 days in minor stroke (NIHSS &le; 3) or high-risk TIA (ABCD2 &ge; 4).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Prevent early recurrent ischemic stroke and early arterial re-occlusion.</li>
+            <li>Cardioembolic stroke (e.g., Atrial Fibrillation): Start DOAC / Warfarin 4–14 days post-onset based on stroke size and hemorrhage risk (1-3-6-12 day rule).</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Hemorrhagic Stroke Management -->
+      <tr class="stroke-mgmt-row-even">
+        <td class="stroke-mgmt-param">Intracerebral Hemorrhage (ICH) Management</td>
+        <td>
+          <ul>
+            <li><strong>Anticoagulation Reversal:</strong> Immediate administration of reversal agents (Idarucizumab for Dabigatran, Andexanet alfa or PCC for Factor Xa inhibitors, 4-factor PCC + Vitamin K for Warfarin).</li>
+            <li><strong>Intracranial Pressure (ICP) Control:</strong> Elevate head of bed to 30&deg;, hypertonic saline / mannitol, and neurosurgical consult for decompression or EVD placement.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Halt hematoma expansion (primary determinant of early mortality).</li>
+            <li>Target rapid blood pressure lowering (SBP 130–140 mmHg within 2 hours).</li>
+            <li>Surgical evacuation indicated for cerebellar hemorrhage &gt; 3 cm or lobar ICH with rapid decline.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Acute Stroke Unit & Rehabilitation -->
+      <tr class="stroke-mgmt-row-odd">
+        <td class="stroke-mgmt-param">Stroke Unit Care &amp; Early Rehab</td>
+        <td>
+          <ul>
+            <li><strong>Dedicated Stroke Unit:</strong> Admission to a geographic multi-disciplinary stroke unit within 24 hours.</li>
+            <li><strong>Early Rehabilitation:</strong> Out-of-bed mobilization within 24–48 hours (avoid intense mobilization in first 24h).</li>
+            <li><strong>Supportive Measures:</strong> Hydration via IV/NG, glycemic control, euthermia, and IPC for VTE prophylaxis.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Dedicated stroke unit care reduces 1-year mortality and dependency by 20%.</li>
+            <li>Prevents secondary medical complications (aspiration, pressure sores, joint contractures, venous thromboembolism).</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Follow-up / outcomes</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-fup-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-fup-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-fup-table th {
+    background-color: #4338ca; /* Indigo theme for Stroke Follow-up & Outcomes */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-fup-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-fup-param {
+    font-weight: bold;
+    color: #4338ca;
+    font-size: 1.05em;
+  }
+  .stroke-fup-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-fup-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-fup-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-fup-row-even { background-color: #ffffff; }
+  .stroke-fup-row-odd { background-color: #eef2ff; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-fup-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-fup-table { font-size: 15px; }
+    .stroke-fup-table th, .stroke-fup-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-fup-table { font-size: 14px; }
+    .stroke-fup-table th, .stroke-fup-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-fup-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-fup-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-fup-table th, .stroke-fup-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-fup-table, 
+    .stroke-fup-table thead, 
+    .stroke-fup-table tbody, 
+    .stroke-fup-table th, 
+    .stroke-fup-table tr, 
+    .stroke-fup-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-fup-table thead { display: none; }
+    .stroke-fup-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #4338ca;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-fup-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-fup-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-fup-table tr td:nth-of-type(1)::before { content: "Outcome Domain:"; }
+    .stroke-fup-table tr td:nth-of-type(2)::before { content: "Evaluation Parameters & Monitoring Schedule:"; }
+    .stroke-fup-table tr td:nth-of-type(3)::before { content: "Target Outcomes & Secondary Prevention Goals:"; }
+  }
+</style>
+
+<div class="stroke-fup-container">
+  <table class="stroke-fup-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Outcome Domain</th>
+        <th style="width: 39%;">Evaluation Parameters &amp; Monitoring Schedule</th>
+        <th style="width: 39%;">Target Outcomes &amp; Secondary Prevention Goals</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Functional Recovery & Disability -->
+      <tr class="stroke-fup-row-even">
+        <td class="stroke-fup-param">Functional Recovery &amp; Disability Scoring</td>
+        <td>
+          <ul>
+            <li><strong>Modified Rankin Scale (mRS):</strong> Evaluate at 90 days post-stroke (0 = no symptoms, 1–2 = slight disability, 3–5 = moderate-to-severe disability, 6 = dead).</li>
+            <li><strong>Barthel Index (BI):</strong> Assess performance in activities of daily living (ADLs) at discharge, 3 months, and 12 months.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Target:</strong> Achieve functional independence (mRS 0–2).</li>
+            <li><strong>Action:</strong> Continue community outpatient neuro-rehabilitation, occupational therapy (OT), physical therapy (PT), and speech-language therapy.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Secondary Prevention & Vascular Targets -->
+      <tr class="stroke-fup-row-odd">
+        <td class="stroke-fup-param">Vascular Risk Factor Control</td>
+        <td>
+          <ul>
+            <li><strong>Blood Pressure:</strong> Office BP monitoring at every visit; target &lt; 130/80 mmHg.</li>
+            <li><strong>Lipid Profile:</strong> Serum LDL-C at 4–12 weeks post-stroke.</li>
+            <li><strong>Glycemic Control:</strong> HbA1c screening; target &lt; 7.0% (53 mmol/mol) in patients with diabetes.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Target LDL-C:</strong> High-intensity statin therapy to reduce LDL-C to &lt; 1.4 mmol/L (&lt; 55 mg/dL) or &ge; 50% reduction for atherosclerotic stroke.</li>
+            <li><strong>Action:</strong> Add Ezetimibe or PCSK9 inhibitors if LDL-C target is not met on maximum tolerated statin dose.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Recurrence & Rhythm Monitoring -->
+      <tr class="stroke-fup-row-even">
+        <td class="stroke-fup-param">Stroke Recurrence &amp; Rhythm Surveillance</td>
+        <td>
+          <ul>
+            <li><strong>Extended Cardiac Monitoring:</strong> 30-day Holter / long-term insertable cardiac monitor (ICM) for cryptogenic ischemic stroke.</li>
+            <li><strong>Carotid Duplex Ultrasound / CTA:</strong> Serial imaging for non-operated moderate-to-severe carotid stenosis.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Target:</strong> Zero recurrent ischemic events or hemorrhagic complications.</li>
+            <li><strong>Action:</strong> Initiate DOAC therapy if paroxysmal Atrial Fibrillation is detected; schedule carotid endarterectomy (CEA) or stenting (CAS) for symptomatic 70–99% stenosis within 14 days of event.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Post-Stroke Complications & Mood -->
+      <tr class="stroke-fup-row-odd">
+        <td class="stroke-fup-param">Long-Term Complications &amp; Quality of Life</td>
+        <td>
+          <ul>
+            <li><strong>Post-Stroke Depression (PSD):</strong> Screen using PHQ-9 at 1–3 months and annually.</li>
+            <li><strong>Post-Stroke Spasticity &amp; Pain:</strong> Clinical exam for limb contractures, shoulder subluxation, or central neuropathic pain.</li>
+            <li><strong>Cognitive Impairment:</strong> MoCA / MMSE testing to screen for vascular cognitive impairment or dementia.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><strong>Target:</strong> Early detection and control of neuropsychiatric and musculoskeletal complications.</li>
+            <li><strong>Action:</strong> Initiate SSRIs for PSD; utilize targeted botulinum toxin injections for focal spasticity; prescribe neuropathic agents (e.g., Gabapentin/Pregabalin) for post-stroke pain.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Patient education</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-edu-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-edu-table th {
+    background-color: #d97706; /* Amber/Warm Orange theme for Patient Education */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-edu-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-edu-param {
+    font-weight: bold;
+    color: #d97706;
+    font-size: 1.05em;
+  }
+  .stroke-edu-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-edu-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-edu-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-edu-row-even { background-color: #ffffff; }
+  .stroke-edu-row-odd { background-color: #fffbeb; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-edu-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-edu-table { font-size: 15px; }
+    .stroke-edu-table th, .stroke-edu-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-edu-table { font-size: 14px; }
+    .stroke-edu-table th, .stroke-edu-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-edu-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-edu-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-edu-table th, .stroke-edu-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-edu-table, 
+    .stroke-edu-table thead, 
+    .stroke-edu-table tbody, 
+    .stroke-edu-table th, 
+    .stroke-edu-table tr, 
+    .stroke-edu-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-edu-table thead { display: none; }
+    .stroke-edu-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #d97706;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-edu-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-edu-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-edu-table tr td:nth-of-type(1)::before { content: "Education Domain:"; }
+    .stroke-edu-table tr td:nth-of-type(2)::before { content: "Core Clinical Explanation & Guidance:"; }
+    .stroke-edu-table tr td:nth-of-type(3)::before { content: "Teach-Back Prompts & Verification:"; }
+  }
+</style>
+
+<div class="stroke-edu-container">
+  <table class="stroke-edu-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Education Domain</th>
+        <th style="width: 39%;">Core Clinical Explanation &amp; Guidance</th>
+        <th style="width: 39%;">Teach-Back Prompts &amp; Verification</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Diagnosis & Purpose of Treatment -->
+      <tr class="stroke-edu-row-even">
+        <td class="stroke-edu-param">Diagnosis &amp; Purpose of Treatment</td>
+        <td>
+          <ul>
+            <li><strong>Understanding Stroke:</strong> Explain that a stroke occurs when blood flow to a part of the brain is blocked (Ischemic) or a blood vessel bursts (Hemorrhagic), injuring brain cells.</li>
+            <li><strong>Purpose of Therapies:</strong> Emphasize that acute medications work to clear blockages or control bleeding, while long-term preventive medicines prevent future blood clots and protect brain tissue.</li>
+            <li><strong>Time-Critical Recovery:</strong> Reiterate that early rehabilitation and strict risk factor control give the best chance for physical and functional recovery.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><em>"In your own words, can you explain what happened during your stroke and why taking your new daily preventive medication is necessary?"</em></li>
+            <li><em>"How do antiplatelet/blood thinner medications help protect you against a second stroke?"</em></li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Medication Adherence & Safety -->
+      <tr class="stroke-edu-row-odd">
+        <td class="stroke-edu-param">Medication Adherence &amp; Safety</td>
+        <td>
+          <ul>
+            <li><strong>Strict Daily Regimen:</strong> Emphasize that antiplatelet agents (Aspirin/Clopidogrel), blood thinners (DOACs/Warfarin), statins, and BP pills must be taken daily without missing doses.</li>
+            <li><strong>Bleeding Precautions:</strong> Educate on signs of excess bleeding when taking blood thinners (unusual bruising, dark/tarry stools, blood in urine, bleeding gums).</li>
+            <li><strong>OTC &amp; Herbals:</strong> Warn against taking over-the-counter NSAIDs (e.g., Ibuprofen, Naproxen) or herbal supplements without consulting the care team.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><em>"What should you do if you miss a dose of your blood thinner or antiplatelet medication?"</em></li>
+            <li><em>"What are two signs of bleeding you should watch out for while taking your blood-thinning pills?"</em></li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Lifestyle Measures & Self-Management -->
+      <tr class="stroke-edu-row-even">
+        <td class="stroke-edu-param">Lifestyle Measures &amp; Risk Modification</td>
+        <td>
+          <ul>
+            <li><strong>Diet &amp; Blood Pressure:</strong> Recommend a low-sodium (&lt; 2g/day), Mediterranean-style diet rich in vegetables, fruits, and whole grains to optimize BP and lipids.</li>
+            <li><strong>Smoking &amp; Alcohol Cessation:</strong> Advise complete smoking cessation and strict alcohol limitation to lower stroke recurrence risk.</li>
+            <li><strong>Physical Activity &amp; Rehabilitation:</strong> Encourage daily prescribed rehabilitation exercises and 150 mins/week of moderate physical activity as tolerated.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><em>"What changes will you make to your daily diet to help keep your blood pressure within a healthy range?"</em></li>
+            <li><em>"How often do you plan to perform your physical therapy exercises at home each week?"</em></li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Monitoring Requirements & Urgent Red Flags -->
+      <tr class="stroke-edu-row-odd">
+        <td class="stroke-edu-param">Monitoring &amp; When to Seek Urgent Care</td>
+        <td>
+          <ul>
+            <li><strong>Home BP &amp; Glucose Log:</strong> Instruct patient to keep a daily log of home blood pressure and blood glucose (if diabetic).</li>
+            <li><strong>Recognizing Stroke Recurrence (BE-FAST):</strong>
+              <ul>
+                <li><strong>B</strong>alance loss / Sudden dizziness</li>
+                <li><strong>E</strong>yes / Sudden vision changes</li>
+                <li><strong>F</strong>acial drooping</li>
+                <li><strong>A</strong>rm or leg weakness/numbness</li>
+                <li><strong>S</strong>peech difficulty or slurring</li>
+                <li><strong>T</strong>ime to call Emergency Services IMMEDIATELY</li>
+              </ul>
+            </li>
+            <li><strong>Urgent Red Flags:</strong> Sudden severe headache, confusion, difficulty swallowing, or sudden weakness.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li><em>"If you notice sudden facial drooping, speech difficulty, or arm weakness again, what action will you take immediately?"</em></li>
+            <li><em>"Why is it dangerous to 'wait and see' if new stroke symptoms will go away on their own?"</em></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Multidisciplinary roles</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-mdr-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-mdr-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-mdr-table th {
+    background-color: #4338ca; /* Indigo theme for Multidisciplinary Roles */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-mdr-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-mdr-param {
+    font-weight: bold;
+    color: #4338ca;
+    font-size: 1.05em;
+  }
+  .stroke-mdr-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-mdr-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-mdr-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-mdr-row-even { background-color: #ffffff; }
+  .stroke-mdr-row-odd { background-color: #eef2ff; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-mdr-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-mdr-table { font-size: 15px; }
+    .stroke-mdr-table th, .stroke-mdr-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-mdr-table { font-size: 14px; }
+    .stroke-mdr-table th, .stroke-mdr-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-mdr-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-mdr-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-mdr-table th, .stroke-mdr-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-mdr-table, 
+    .stroke-mdr-table thead, 
+    .stroke-mdr-table tbody, 
+    .stroke-mdr-table th, 
+    .stroke-mdr-table tr, 
+    .stroke-mdr-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-mdr-table thead { display: none; }
+    .stroke-mdr-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #4338ca;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-mdr-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-mdr-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-mdr-table tr td:nth-of-type(1)::before { content: "Team Member:"; }
+    .stroke-mdr-table tr td:nth-of-type(2)::before { content: "Primary Responsibilities:"; }
+    .stroke-mdr-table tr td:nth-of-type(3)::before { content: "Collaborative Focus & Care Delivery:"; }
+  }
+</style>
+
+<div class="stroke-mdr-container">
+  <table class="stroke-mdr-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Team Member</th>
+        <th style="width: 39%;">Primary Responsibilities</th>
+        <th style="width: 39%;">Collaborative Focus &amp; Care Delivery</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Neurologists & Physicians -->
+      <tr class="stroke-mdr-row-even">
+        <td class="stroke-mdr-param">Neurologists &amp; Physicians</td>
+        <td>
+          <ul>
+            <li><strong>Assessment &amp; Diagnosis:</strong> Perform urgent clinical evaluation, calculate NIHSS scores, order/interpret brain imaging (CT/CTA/MRI), and establish stroke subtype.</li>
+            <li><strong>Treatment Decisions:</strong> Direct hyperacute reperfusion therapy (IV thrombolysis / endovascular thrombectomy), manage acute complications, and prescribe secondary prevention[cite: 2].</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Lead hyperacute stroke response, coordinate with neurointerventional radiologists and neurosurgeons, and define overall recovery targets[cite: 2].</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Clinical Pharmacists -->
+      <tr class="stroke-mdr-row-odd">
+        <td class="stroke-mdr-param">Clinical Pharmacists</td>
+        <td>
+          <ul>
+            <li><strong>Medication Optimization:</strong> Reconcile acute and secondary prevention drugs, evaluate thrombolytic eligibility/dosing, and check drug-drug interactions[cite: 2].</li>
+            <li><strong>Adherence &amp; Safety:</strong> Screen for contraindications (e.g., active bleeding risks, drug interactions with DOACs), optimize antiplatelet/anticoagulant timing, and support long-term adherence[cite: 2].</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Monitor narrow therapeutic range agents (e.g., Warfarin INR), guide statin intensity titration, and counsel patients on medication safety[cite: 2].</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Stroke Nurses -->
+      <tr class="stroke-mdr-row-even">
+        <td class="stroke-mdr-param">Stroke &amp; Rehabilitation Nurses</td>
+        <td>
+          <ul>
+            <li><strong>Monitoring &amp; Surveillance:</strong> Perform frequent neurological assessments, track vitals (BP, glucose, temperature), and conduct bedside dysphagia screenings[cite: 2].</li>
+            <li><strong>Patient Care &amp; Education:</strong> Administer acute IV medications, deliver patient/family education, coordinate care, and prevent complications like pressure ulcers and aspiration[cite: 2].</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Serve as frontline patient advocates, coordinate daily multidisciplinary rounds, and ensure safety during early post-stroke mobilization[cite: 2].</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Allied Health Professionals -->
+      <tr class="stroke-mdr-row-odd">
+        <td class="stroke-mdr-param">Physio, Occupational &amp; Speech Therapists</td>
+        <td>
+          <ul>
+            <li><strong>Functional Rehabilitation:</strong> Physiotherapists restore mobility and gait; Occupational Therapists optimize ADLs and cognitive-motor tasks.</li>
+            <li><strong>Swallow &amp; Language Recovery:</strong> Speech-Language Pathologists assess formal dysphagia, manage aphasia/dysarthria, and recommend safe diet textures.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Collaborate to rebuild functional independence, prevent muscle contractures/aspiration, and structure community reintegration plans.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Patient & Family -->
+      <tr class="stroke-mdr-row-even">
+        <td class="stroke-mdr-param">Patient &amp; Support Network</td>
+        <td>
+          <ul>
+            <li><strong>Shared Decision-Making:</strong> Participate actively in treatment choices, rehabilitation goal setting, and secondary prevention plans[cite: 2].</li>
+            <li><strong>Adherence &amp; Reporting:</strong> Take prescribed medications as agreed, engage in daily therapy exercises, keep BP/glucose logs, and report red-flag symptoms promptly[cite: 2].</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Adopt lifestyle modifications (diet, exercise, smoking cessation) and serve as active partners in post-stroke recovery and recurrence prevention[cite: 2].</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div></td></tr>
+<tr><td><strong>Individualization</strong></td><td><style>
+  /* Base structural styles and typography */
+  .stroke-ind-container {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: #333333;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .stroke-ind-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+  }
+  .stroke-ind-table th {
+    background-color: #6d28d9; /* Deep Violet theme for Individualization Factors */
+    color: #ffffff;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    font-weight: 600;
+  }
+  .stroke-ind-table td {
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    vertical-align: top;
+  }
+  .stroke-ind-param {
+    font-weight: bold;
+    color: #6d28d9;
+    font-size: 1.05em;
+  }
+  .stroke-ind-table ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .stroke-ind-table li {
+    margin-bottom: 4px;
+  }
+  .stroke-ind-table li:last-child {
+    margin-bottom: 0;
+  }
+  .stroke-ind-row-even { background-color: #ffffff; }
+  .stroke-ind-row-odd { background-color: #f5f3ff; }
+
+  /* --- RESPONSIVE BREAKPOINTS --- */
+
+  /* Desktops (1280px and above) */
+  @media (min-width: 1280px) {
+    .stroke-ind-table { font-size: 16px; }
+  }
+
+  /* Laptops (1024px to 1279px) */
+  @media (max-width: 1279px) and (min-width: 1024px) {
+    .stroke-ind-table { font-size: 15px; }
+    .stroke-ind-table th, .stroke-ind-table td { padding: 12px 14px; }
+  }
+
+  /* Tablets (768px to 1023px) */
+  @media (max-width: 1023px) and (min-width: 768px) {
+    .stroke-ind-table { font-size: 14px; }
+    .stroke-ind-table th, .stroke-ind-table td { padding: 10px 12px; }
+  }
+
+  /* Large Smartphones (481px to 767px) - Horizontal Scroll Guard */
+  @media (max-width: 767px) {
+    .stroke-ind-container {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .stroke-ind-table {
+      min-width: 750px;
+      font-size: 13.5px;
+    }
+    .stroke-ind-table th, .stroke-ind-table td { padding: 10px; }
+  }
+
+  /* Small Smartphones (Up to 480px) - Stacked Mobile Profile Cards */
+  @media (max-width: 480px) {
+    .stroke-ind-table, 
+    .stroke-ind-table thead, 
+    .stroke-ind-table tbody, 
+    .stroke-ind-table th, 
+    .stroke-ind-table tr, 
+    .stroke-ind-table td { 
+      display: block; 
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .stroke-ind-table thead { display: none; }
+    .stroke-ind-table tr {
+      margin-bottom: 20px;
+      border: 1px solid #6d28d9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .stroke-ind-table td {
+      padding: 12px;
+      border: none;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .stroke-ind-table td:last-child { border-bottom: none; }
+    
+    /* Prepend structural labels for mobile screen layout context */
+    .stroke-ind-table tr td:nth-of-type(1)::before { content: "Individualization Variable:"; }
+    .stroke-ind-table tr td:nth-of-type(2)::before { content: "Clinical Assessment & Risk Modifiers:"; }
+    .stroke-ind-table tr td:nth-of-type(3)::before { content: "Tailored Management Adjustments:"; }
+  }
+</style>
+
+<div class="stroke-ind-container">
+  <table class="stroke-ind-table">
+    <thead>
+      <tr>
+        <th style="width: 22%;">Individualization Variable</th>
+        <th style="width: 39%;">Clinical Assessment &amp; Risk Modifiers</th>
+        <th style="width: 39%;">Tailored Management Adjustments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Age & Frailty -->
+      <tr class="stroke-ind-row-even">
+        <td class="stroke-ind-param">Age &amp; Frailty Factors</td>
+        <td>
+          <ul>
+            <li><strong>Elderly / Octogenarians (&ge; 80 yrs):</strong> Elevated risk of hemorrhagic transformation, fall risk, and post-stroke delirium.</li>
+            <li><strong>Pediatric / Young Stroke:</strong> Non-atherosclerotic etiologies (e.g., arterial dissection, hypercoagulable states, patent foramen ovale).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Age alone is NOT a contraindication for IV thrombolysis or thrombectomy; weigh benefit vs. bleeding risk carefully.</li>
+            <li>Tailor antithrombotic selection and dosage based on fall risk and renal decline.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Pregnancy & Postpartum -->
+      <tr class="stroke-ind-row-odd">
+        <td class="stroke-ind-param">Pregnancy &amp; Postpartum State</td>
+        <td>
+          <ul>
+            <li><strong>Physiologic State:</strong> Hypercoagulability increases risk of cerebral venous sinus thrombosis (CVST) and ischemic stroke.</li>
+            <li><strong>Fetal Safety:</strong> Teratogenicity risks associated with standard secondary prevention drugs (e.g., Statins, Warfarin in 1st trimester, DOACs).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>IV thrombolysis is relative; benefit usually outweighs risk in severe stroke.</li>
+            <li>Use Low Molecular Weight Heparin (LMWH) or unfractionated heparin for anticoagulation; avoid statins and DOACs during pregnancy and breastfeeding.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Renal & Hepatic Impairment -->
+      <tr class="stroke-ind-row-even">
+        <td class="stroke-ind-param">Renal &amp; Hepatic Function</td>
+        <td>
+          <ul>
+            <li><strong>Severe Renal Impairment (CrCl &lt; 30 mL/min):</strong> Impaired clearance of direct oral anticoagulants (DOACs) and contrast toxicity risk for CTA/CTP.</li>
+            <li><strong>Hepatic Dysfunction:</strong> Coagulopathy increases baseline intracranial hemorrhage risk.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Dose-adjust or switch DOACs (or switch to Warfarin / LMWH) in severe renal failure.</li>
+            <li>Do not delay emergent unenhanced head CT or life-saving CTA for baseline creatinine results.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Allergies & Concurrent Medicines -->
+      <tr class="stroke-ind-row-odd">
+        <td class="stroke-ind-param">Allergies &amp; Drug Interactions</td>
+        <td>
+          <ul>
+            <li><strong>Aspirin Hypersensitivity:</strong> Inability to tolerate standard first-line antiplatelet therapy.</li>
+            <li><strong>Concurrent Anticoagulation:</strong> Active use of therapeutic anticoagulants (DOAC/Warfarin with INR &gt; 1.7) at stroke presentation.</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Substitute Clopidogrel 75 mg daily in aspirin-allergic patients.</li>
+            <li>IV thrombolysis is contraindicated if therapeutic anticoagulation was taken within 24–48 hours unless specific reversal agents or anti-Xa levels permit.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Socioeconomic Barriers & Patient Preferences -->
+      <tr class="stroke-ind-row-even">
+        <td class="stroke-ind-param">Socioeconomic Barriers &amp; Preferences</td>
+        <td>
+          <ul>
+            <li><strong>Financial &amp; Access Constraints:</strong> High cost of DOACs or access barriers to long-term outpatient rehabilitation.</li>
+            <li><strong>Monitoring Capabilities:</strong> Inability to perform routine lab monitoring for Warfarin (INR).</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>Choose generic Warfarin when DOACs are unaffordable, provided regular INR monitoring is feasible.</li>
+            <li>Align rehabilitation modality (inpatient, home-based, or tele-rehab) with social support systems and insurance coverage.</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="patient" class="clinical-card">
+<h2>Patient Checklist</h2>
+<ul class="check-list">
+<li>Know the name and purpose of each medicine.</li>
+<li>Know how and when to take or use treatment.</li>
+<li>Ask what adverse effects require medical attention.</li>
+<li>Keep appointments and monitoring tests.</li>
+<li>Tell the healthcare team about OTC medicines, supplements and allergies.</li>
+<li>Do not stop long-term treatment abruptly without professional advice unless an emergency clinician instructs otherwise.</li>
+</ul>
+</section>
+
+<section id="emergency" class="safety-note">
+<h2>🚨 When urgent medical care may be needed</h2>
+<p>Sudden weakness, facial droop, speech/vision disturbance, severe acute headache</p>
+<p><strong>Emergency symptoms should be assessed urgently rather than managed from this webpage.</strong></p>
+</section>
+
+<section id="references">
+<h2>Evidence & References</h2>
+<ul class="reference-list">
+<li><a href="https://www.who.int/" target="_blank" rel="noopener">World Health Organization (WHO)</a></li>
+<li><a href="https://www.nice.org.uk/guidance" target="_blank" rel="noopener">NICE Clinical Guidelines</a></li>
+<li><a href="https://www.medscape.com/" target="_blank" rel="noopener">Medscape Clinical Reference</a></li>
+<li><a href="https://www.uptodate.com/" target="_blank" rel="noopener">UpToDate</a></li>
+<li><a href="https://www.pharmacyboardkenya.org/" target="_blank" rel="noopener">Pharmacy and Poisons Board, Kenya</a></li>
+</ul>
+</section>
+</main>
+<footer class="footer"><p>&copy; 2026 RenceMed RM+ · Educational medical information</p></footer>
+</body>
+</html>

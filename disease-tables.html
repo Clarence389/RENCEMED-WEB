@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RenceMed RM+ | Disease Clinical Tables</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.disease-controls{display:grid;grid-template-columns:2fr 1fr;gap:1rem;margin:1.5rem 0}
+.disease-controls input,.disease-controls select{padding:.9rem 1rem;border:1px solid #cbd5e1;border-radius:12px;font:inherit;background:#fff}
+#disease-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.disease-card[hidden]{display:none}
+@media(max-width:1024px){#disease-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:768px){.disease-controls{grid-template-columns:1fr}#disease-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<span class="section-kicker">RM+ Clinical Knowledge Base</span>
+<h1>Disease-Specific Clinical Tables</h1>
+<p>Structured clinical reference pages for patients, pharmacists, nurses, doctors and students.</p>
+</div></header>
+<main class="container">
+<div class="evidence-note"><strong>Clinical safety:</strong> These tables summarize decision domains. They are not a substitute for current disease-specific guidelines, local protocols or individualized clinical assessment.</div>
+<div class="disease-controls">
+<input id="disease-search" type="search" placeholder="Search disease or condition..." aria-label="Search disease or condition">
+<select id="specialty-filter" aria-label="Filter by clinical specialty"><option value="">All specialties</option><option value="bone health">Bone Health</option><option value="cardiovascular">Cardiovascular</option><option value="endocrine / metabolic">Endocrine / Metabolic</option><option value="gastrointestinal">Gastrointestinal</option><option value="gastrointestinal / infectious">Gastrointestinal / Infectious</option><option value="haematology">Haematology</option><option value="infectious / emergency">Infectious / Emergency</option><option value="infectious / hepatology">Infectious / Hepatology</option><option value="infectious / respiratory">Infectious / Respiratory</option><option value="infectious / urology">Infectious / Urology</option><option value="infectious disease">Infectious Disease</option><option value="mental health">Mental Health</option><option value="metabolic">Metabolic</option><option value="musculoskeletal">Musculoskeletal</option><option value="neurology">Neurology</option><option value="neurology / emergency">Neurology / Emergency</option><option value="obstetrics">Obstetrics</option><option value="oncology">Oncology</option><option value="renal">Renal</option><option value="respiratory">Respiratory</option><option value="respiratory / obstetrics">Respiratory / Obstetrics</option><option value="rheumatology">Rheumatology</option></select>
+</div>
+<p id="disease-count" aria-live="polite"></p>
+<section id="disease-grid"><article class="clinical-card disease-card" data-name="hypertension (high blood pressure)" data-specialty="cardiovascular">
+<span class="section-kicker">Cardiovascular</span>
+<h2>Hypertension (High Blood Pressure)</h2>
+<p><strong>Assessment:</strong> BP confirmation; cardiovascular risk; renal assessment</p>
+<p><strong>Monitoring:</strong> BP classification; home/ambulatory monitoring where appropriate</p>
+<a class="btn" href="disease_tables/hypertension.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="type 2 diabetes mellitus" data-specialty="endocrine / metabolic">
+<span class="section-kicker">Endocrine / Metabolic</span>
+<h2>Type 2 Diabetes Mellitus</h2>
+<p><strong>Assessment:</strong> Glucose/HbA1c assessment; renal function; cardiovascular risk</p>
+<p><strong>Monitoring:</strong> HbA1c and glucose monitoring individualized to treatment</p>
+<a class="btn" href="disease_tables/type-2-diabetes.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="asthma" data-specialty="respiratory">
+<span class="section-kicker">Respiratory</span>
+<h2>Asthma</h2>
+<p><strong>Assessment:</strong> History; symptom pattern; objective lung-function assessment where available</p>
+<p><strong>Monitoring:</strong> Symptoms, reliever use, lung function and exacerbation history</p>
+<a class="btn" href="disease_tables/asthma.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="chronic obstructive pulmonary disease (copd)" data-specialty="respiratory">
+<span class="section-kicker">Respiratory</span>
+<h2>Chronic Obstructive Pulmonary Disease (COPD)</h2>
+<p><strong>Assessment:</strong> Clinical assessment and spirometry when stable/appropriate</p>
+<p><strong>Monitoring:</strong> Symptoms, exacerbations, oxygenation where indicated</p>
+<a class="btn" href="disease_tables/copd.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="pneumonia" data-specialty="infectious / respiratory">
+<span class="section-kicker">Infectious / Respiratory</span>
+<h2>Pneumonia</h2>
+<p><strong>Assessment:</strong> Clinical assessment; oxygenation; imaging/labs as clinically indicated</p>
+<p><strong>Monitoring:</strong> Respiratory rate, oxygen saturation, mental status, hydration and severity</p>
+<a class="btn" href="disease_tables/pneumonia.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="tuberculosis (tb)" data-specialty="infectious disease">
+<span class="section-kicker">Infectious Disease</span>
+<h2>Tuberculosis (TB)</h2>
+<p><strong>Assessment:</strong> Microbiological testing and drug-resistance assessment according to current guidance</p>
+<p><strong>Monitoring:</strong> Microbiology, symptoms, weight and treatment response</p>
+<a class="btn" href="disease_tables/tuberculosis.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="hiv infection" data-specialty="infectious disease">
+<span class="section-kicker">Infectious Disease</span>
+<h2>HIV Infection</h2>
+<p><strong>Assessment:</strong> HIV testing/confirmation and baseline clinical assessment</p>
+<p><strong>Monitoring:</strong> Viral load, CD4 when indicated, adherence and comorbidities</p>
+<a class="btn" href="disease_tables/hiv.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="malaria" data-specialty="infectious disease">
+<span class="section-kicker">Infectious Disease</span>
+<h2>Malaria</h2>
+<p><strong>Assessment:</strong> Parasitological confirmation where feasible; severity assessment</p>
+<p><strong>Monitoring:</strong> Temperature, parasitaemia when available, hydration and organ-function indicators in severe disease</p>
+<a class="btn" href="disease_tables/malaria.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="peptic ulcer disease" data-specialty="gastrointestinal">
+<span class="section-kicker">Gastrointestinal</span>
+<h2>Peptic Ulcer Disease</h2>
+<p><strong>Assessment:</strong> History, alarm features, H. pylori assessment when indicated</p>
+<p><strong>Monitoring:</strong> Symptoms, bleeding signs and treatment response</p>
+<a class="btn" href="disease_tables/peptic-ulcer-disease.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="chronic kidney disease" data-specialty="renal">
+<span class="section-kicker">Renal</span>
+<h2>Chronic Kidney Disease</h2>
+<p><strong>Assessment:</strong> eGFR and urine albumin/protein assessment with chronicity</p>
+<p><strong>Monitoring:</strong> eGFR, albuminuria, BP, electrolytes and complications</p>
+<a class="btn" href="disease_tables/chronic-kidney-disease.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="heart failure" data-specialty="cardiovascular">
+<span class="section-kicker">Cardiovascular</span>
+<h2>Heart Failure</h2>
+<p><strong>Assessment:</strong> History, examination, ECG/imaging and biomarkers where appropriate</p>
+<p><strong>Monitoring:</strong> Weight, BP, symptoms, renal function/electrolytes and volume status</p>
+<a class="btn" href="disease_tables/heart-failure.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="stroke" data-specialty="neurology / emergency">
+<span class="section-kicker">Neurology / Emergency</span>
+<h2>Stroke</h2>
+<p><strong>Assessment:</strong> Urgent neurological assessment and brain imaging</p>
+<p><strong>Monitoring:</strong> Neurological status, BP, glucose, swallowing and complications</p>
+<a class="btn" href="disease_tables/stroke.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="epilepsy" data-specialty="neurology">
+<span class="section-kicker">Neurology</span>
+<h2>Epilepsy</h2>
+<p><strong>Assessment:</strong> Clinical seizure history; EEG/imaging when indicated</p>
+<p><strong>Monitoring:</strong> Seizure frequency, adherence, adverse effects and relevant labs</p>
+<a class="btn" href="disease_tables/epilepsy.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="depressive disorder" data-specialty="mental health">
+<span class="section-kicker">Mental Health</span>
+<h2>Depressive Disorder</h2>
+<p><strong>Assessment:</strong> Clinical assessment including severity, function and suicide risk</p>
+<p><strong>Monitoring:</strong> Symptoms, function, adherence, adverse effects and safety</p>
+<a class="btn" href="disease_tables/depression.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="anxiety disorders" data-specialty="mental health">
+<span class="section-kicker">Mental Health</span>
+<h2>Anxiety Disorders</h2>
+<p><strong>Assessment:</strong> Clinical assessment and differential diagnosis</p>
+<p><strong>Monitoring:</strong> Symptoms, function, sleep, substance use and treatment response</p>
+<a class="btn" href="disease_tables/anxiety.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="anaemia" data-specialty="haematology">
+<span class="section-kicker">Haematology</span>
+<h2>Anaemia</h2>
+<p><strong>Assessment:</strong> CBC and cause-directed investigations</p>
+<p><strong>Monitoring:</strong> Haemoglobin, indices, symptoms and response to treatment</p>
+<a class="btn" href="disease_tables/anaemia.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="osteoarthritis" data-specialty="musculoskeletal">
+<span class="section-kicker">Musculoskeletal</span>
+<h2>Osteoarthritis</h2>
+<p><strong>Assessment:</strong> Clinical assessment; imaging when diagnosis is uncertain</p>
+<p><strong>Monitoring:</strong> Pain, function and mobility</p>
+<a class="btn" href="disease_tables/osteoarthritis.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="rheumatoid arthritis" data-specialty="rheumatology">
+<span class="section-kicker">Rheumatology</span>
+<h2>Rheumatoid Arthritis</h2>
+<p><strong>Assessment:</strong> Clinical assessment, inflammatory markers and imaging/serology when indicated</p>
+<p><strong>Monitoring:</strong> Disease activity, joint function and medicine toxicity</p>
+<a class="btn" href="disease_tables/rheumatoid-arthritis.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="gout" data-specialty="rheumatology">
+<span class="section-kicker">Rheumatology</span>
+<h2>Gout</h2>
+<p><strong>Assessment:</strong> Clinical assessment; joint aspiration when diagnosis is uncertain</p>
+<p><strong>Monitoring:</strong> Attack frequency, urate level when appropriate and comorbidities</p>
+<a class="btn" href="disease_tables/gout.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="obesity" data-specialty="metabolic">
+<span class="section-kicker">Metabolic</span>
+<h2>Obesity</h2>
+<p><strong>Assessment:</strong> BMI/waist assessment plus comorbidity screening</p>
+<p><strong>Monitoring:</strong> Weight trend, BP, glucose/lipids and treatment goals</p>
+<a class="btn" href="disease_tables/obesity.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="chronic hepatitis b" data-specialty="infectious / hepatology">
+<span class="section-kicker">Infectious / Hepatology</span>
+<h2>Chronic Hepatitis B</h2>
+<p><strong>Assessment:</strong> HBV serology, viral load and liver assessment</p>
+<p><strong>Monitoring:</strong> ALT, HBV DNA, liver fibrosis/cirrhosis assessment as indicated</p>
+<a class="btn" href="disease_tables/hepatitis-b.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="hepatitis c" data-specialty="infectious / hepatology">
+<span class="section-kicker">Infectious / Hepatology</span>
+<h2>Hepatitis C</h2>
+<p><strong>Assessment:</strong> HCV antibody followed by RNA confirmation</p>
+<p><strong>Monitoring:</strong> HCV RNA, liver fibrosis and treatment response</p>
+<a class="btn" href="disease_tables/hepatitis-c.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="peptic ulcer / dyspepsia" data-specialty="gastrointestinal">
+<span class="section-kicker">Gastrointestinal</span>
+<h2>Peptic Ulcer / Dyspepsia</h2>
+<p><strong>Assessment:</strong> Alarm-feature assessment and H. pylori testing when indicated</p>
+<p><strong>Monitoring:</strong> Bleeding, weight loss, anaemia and symptom response</p>
+<a class="btn" href="disease_tables/peptic-ulcer.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="acute diarrhoeal disease" data-specialty="gastrointestinal / infectious">
+<span class="section-kicker">Gastrointestinal / Infectious</span>
+<h2>Acute Diarrhoeal Disease</h2>
+<p><strong>Assessment:</strong> Hydration and severity assessment; stool testing selectively</p>
+<p><strong>Monitoring:</strong> Hydration, urine output, stool frequency and electrolytes when severe</p>
+<a class="btn" href="disease_tables/diarrhoea.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="meningitis" data-specialty="infectious / emergency">
+<span class="section-kicker">Infectious / Emergency</span>
+<h2>Meningitis</h2>
+<p><strong>Assessment:</strong> Urgent clinical assessment, blood studies and CSF/imaging as indicated</p>
+<p><strong>Monitoring:</strong> Neurological status, vitals and microbiology</p>
+<a class="btn" href="disease_tables/meningitis.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="urinary tract infection" data-specialty="infectious / urology">
+<span class="section-kicker">Infectious / Urology</span>
+<h2>Urinary Tract Infection</h2>
+<p><strong>Assessment:</strong> Symptoms plus urine testing/culture according to setting and risk</p>
+<p><strong>Monitoring:</strong> Symptoms, fever, renal function in complicated cases</p>
+<a class="btn" href="disease_tables/uti.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="osteoporosis" data-specialty="bone health">
+<span class="section-kicker">Bone Health</span>
+<h2>Osteoporosis</h2>
+<p><strong>Assessment:</strong> Fracture risk assessment and bone-density testing when indicated</p>
+<p><strong>Monitoring:</strong> Fracture history, BMD and calcium/vitamin D status when relevant</p>
+<a class="btn" href="disease_tables/osteoporosis.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="cancer" data-specialty="oncology">
+<span class="section-kicker">Oncology</span>
+<h2>Cancer</h2>
+<p><strong>Assessment:</strong> Site-specific diagnostic pathway with pathology/staging</p>
+<p><strong>Monitoring:</strong> Tumour response, organ function, toxicity and performance status</p>
+<a class="btn" href="disease_tables/cancer.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="hypertensive disorders of pregnancy" data-specialty="obstetrics">
+<span class="section-kicker">Obstetrics</span>
+<h2>Hypertensive Disorders of Pregnancy</h2>
+<p><strong>Assessment:</strong> BP plus urine/protein and maternal-fetal assessment</p>
+<p><strong>Monitoring:</strong> BP, symptoms, urine protein and maternal/fetal status</p>
+<a class="btn" href="disease_tables/pregnancy-hypertension.html">Open Clinical Table</a>
+</article><article class="clinical-card disease-card" data-name="asthma in pregnancy" data-specialty="respiratory / obstetrics">
+<span class="section-kicker">Respiratory / Obstetrics</span>
+<h2>Asthma in Pregnancy</h2>
+<p><strong>Assessment:</strong> Asthma control plus maternal/fetal assessment</p>
+<p><strong>Monitoring:</strong> Symptoms, reliever use and oxygenation</p>
+<a class="btn" href="disease_tables/asthma-pregnancy.html">Open Clinical Table</a>
+</article></section>
+</main>
+<script>
+const q=document.getElementById('disease-search'), f=document.getElementById('specialty-filter');
+const cards=[...document.querySelectorAll('.disease-card')], count=document.getElementById('disease-count');
+function filterDiseases(){
+ const s=q.value.toLowerCase().trim(), c=f.value; let n=0;
+ cards.forEach(x=>{const ok=(!s||x.dataset.name.includes(s))&&(!c||x.dataset.specialty===c);x.hidden=!ok;if(ok)n++;});
+ count.textContent=n+' disease clinical tables shown.';
+}
+q.addEventListener('input',filterDiseases); f.addEventListener('change',filterDiseases); filterDiseases();
+</script>
+</body>
+</html>
